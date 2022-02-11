@@ -1,7 +1,7 @@
 # mwc-commander
 CLI for MWC(Mobile World Congress), that allows to access information from the MWC and other developers and technology professionals who will attend.
 
-## Instalation
+## Installation
 ### 1
 ```bash
 npm link
