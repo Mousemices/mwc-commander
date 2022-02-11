@@ -10,7 +10,7 @@ npm link
 ```
 This create a symlink in the global folder, after that, we use our custom command `mwc`
 
-### Second
+### Second(Latest version is not published yet)
 ```bash
 npm i mwc-commander -g
 ```
