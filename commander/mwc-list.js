@@ -1,7 +1,6 @@
 import { program } from 'commander';
 import { Developer } from '../model/Developer.js';
-
-
+import Realm from 'realm';
 
 program
     //.argument('<name>')

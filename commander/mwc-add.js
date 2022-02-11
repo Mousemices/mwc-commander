@@ -11,7 +11,6 @@ const { prompt } = inquirer;
 program
     .action(async () => {
         const answer = await (prompt(questions));
-        console.log(answer);
         
         const realm = await Realm.open({
             schema: [Developer],
@@ -31,7 +30,7 @@ program
         });
 
         realm.close();
-        
+
         console.log(chalk.green('✔ Inserted new deveoper'));
     })
 
