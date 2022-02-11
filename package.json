@@ -1,0 +1,31 @@
+{
+  "name": "mwc-commander",
+  "version": "1.0.4",
+  "description": "A CLI that allows to access infromation from the MWC, developers and professional tech who will attend.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "MWC",
+    "commander"
+  ],
+  "preferGlobal": true,
+  "bin": {
+    "mwc": "./commander/command.js"
+  },
+  "author": "linmouse",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "chalk": "^5.0.0",
+    "commander": "^9.0.0",
+    "dotenv": "^16.0.0",
+    "figlet": "^1.5.2",
+    "inquirer": "^8.2.0",
+    "nanospinner": "^1.0.0",
+    "npm": "^8.5.0",
+    "realm": "^10.12.0"
+  }
+}
