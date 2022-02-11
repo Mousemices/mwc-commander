@@ -2,17 +2,20 @@
 CLI for MWC(Mobile World Congress), that allows to access information from the MWC and other developers and technology professionals who will attend.
 
 ## Installation
-### 1
+There are 2 ways to use the CLI
+### First
+After clone the repositoy, run:
 ```bash
 npm link
 ```
 This create a symlink in the global folder, after that, we use our custom command `mwc`
 
-### 2
+### Second
 ```bash
 npm i mwc-commander -g
 ```
-Or just use npm to install the command.
+Install the command from npm directly.
+
 ## Command
   `mwc init|i`. Fetch MWC data and save into database(**THIS SHOULD BE YOUR FIRST COMMAND TO RUN**)
   ```bash
