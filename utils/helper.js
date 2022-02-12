@@ -6,7 +6,8 @@ const DEVELOPER_FIELD = [
   'name',
   'email',
   'category',
-  'phone'
+  'phone',
+  'days_to_attend'
 ]
 
 const questions = [
