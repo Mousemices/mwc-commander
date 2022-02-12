@@ -6,9 +6,12 @@ There are 2 ways to use the CLI
 ### First
 After clone the repositoy, run:
 ```bash
+npm install
+```
+```bash
 npm link
 ```
-This create a symlink in the global folder, after that, we use our custom command `mwc`
+The last command will create a symlink in the global folder, after that, we use our custom command `mwc`
 
 ### Second
 ```bash
