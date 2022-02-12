@@ -6,7 +6,6 @@ import { DEVELOPER_FIELD } from '../utils/helper.js'
 program
     .option('-o,--orderBy <field>', 'Order list by specifying the field')
     .action(async (options) => {
-        console.log(options);
 
         let field = '';
 
