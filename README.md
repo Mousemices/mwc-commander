@@ -67,3 +67,9 @@ Install the command from https://www.npmjs.com/package/mwc-commander directly.
   // or
   $ mwc
   ```
+  
+  ## UNINSTALL
+  ```bash
+  npm uninstall -g mwc-commander
+  ```
+  Unistall the command globally
