@@ -1,17 +1,26 @@
 import { program } from 'commander';
-import { Developer } from '../model/Developer.js';
 import Realm from 'realm';
+import { Developer } from '../model/Developer.js';
+import { DEVELOPER_FIELD } from '../utils/helper.js'
 
 program
-    //.argument('<name>')
-    .option('-n, --name <test>', 'title to use before name')
-    .option('-i, --integer <number>', 'integer argument')
-    .action(async (/*name*/options) => {
+    .option('-o,--orderBy <field>', 'Order list by specify the field')
+    .action(async (options) => {
+        console.log(options);
+
+        let field = '';
+
+        if(DEVELOPER_FIELD.includes(options.orderBy)) {
+            field = options.orderBy;
+        }
+
         const realm = await Realm.open({
             schema: [Developer],
         });
 
-        let developers = realm.objects("Developer");
+        let developers = field == '' ? 
+                            realm.objects('Developer') : 
+                            realm.objects('Developer').sorted(field);
         
         developers = developers.map(developer => {
             return ({ 
@@ -26,7 +35,6 @@ program
         console.table(developers);
 
         realm.close();
-        
     });
 
 program.parse(process.argv);

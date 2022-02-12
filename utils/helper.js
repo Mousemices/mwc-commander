@@ -1,5 +1,13 @@
 import inquirer from 'inquirer';
+
 const MWC_DATA_URL = 'https://challenges-asset-files.s3.us-east-2.amazonaws.com/data_sets/mwc22.json';
+
+const DEVELOPER_FIELD = [
+  'name',
+  'email',
+  'category',
+  'phone'
+]
 
 const questions = [
     {
@@ -78,5 +86,6 @@ const questions = [
 
 export {
     MWC_DATA_URL,
-    questions
+    questions,
+    DEVELOPER_FIELD
 };
