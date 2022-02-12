@@ -10,11 +10,11 @@ npm link
 ```
 This create a symlink in the global folder, after that, we use our custom command `mwc`
 
-### Second(Latest version is not published yet)
+### Second
 ```bash
 npm i mwc-commander -g
 ```
-Install the command from npm directly.
+Install the command from https://www.npmjs.com/package/mwc-commander directly.
 
 ## Command
   `mwc init|i`. Fetch MWC data and save into database(**THIS SHOULD BE YOUR FIRST COMMAND TO RUN**)
@@ -30,7 +30,14 @@ Install the command from npm directly.
   // or
   $ mwc l
   ```
-  You might pass some option such like `mwc list --name`, that will show the list of developer's name(!*Not supported yet*)
+  You might pass `orderBy` option for `mwc list` command to order the data:
+  ```bash
+  $ mwc list orderBy=name
+  $ mwc list orderBy=email
+  $ mwc list orderBy=category
+  $ mwc list orderBy=phone
+  $ mwc list orderBy=days_to_attend
+  ```
   
   `mwc add|a`. Add a new developer who will be attending MWC
   ```bash
