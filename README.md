@@ -35,11 +35,11 @@ Install the command from https://www.npmjs.com/package/mwc-commander directly.
   ```
   You might pass `orderBy` option for `mwc list` command to order the data:
   ```bash
-  $ mwc list orderBy=name
-  $ mwc list orderBy=email
-  $ mwc list orderBy=category
-  $ mwc list orderBy=phone
-  $ mwc list orderBy=days_to_attend
+  $ mwc list --orderBy=name
+  $ mwc list --orderBy=email
+  $ mwc list --orderBy=category
+  $ mwc list --orderBy=phone
+  $ mwc list --orderBy=days_to_attend
   ```
   
   `mwc add|a`. Add a new developer who will be attending MWC
