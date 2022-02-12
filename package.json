@@ -1,6 +1,6 @@
 {
   "name": "mwc-commander",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A CLI that allows to access infromation from the MWC, developers and professional tech who will attend.",
   "main": "index.js",
   "type": "module",
