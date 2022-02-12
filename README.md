@@ -51,7 +51,9 @@ Install the command from npm directly.
   $ mwc day
   ```
   
-  
- 
-
-
+  You may want to list all available command, run:
+  ```bash
+  $ mwc help
+  // or
+  $ mwc
+  ```
